@@ -19,9 +19,9 @@ jobs:
       - run: node main update
       - run: node main commit
         env:
-          GIT_COMMITTER_NAME: dtinth-bot
-          GIT_AUTHOR_NAME: dtinth-bot
-          EMAIL: dtinth-bot@users.noreply.github.com
+          GIT_COMMITTER_NAME: sleepyessheep
+          GIT_AUTHOR_NAME: sleepyessheep
+          EMAIL: sleepyessheep@users.noreply.github.com
       - name: Save changed files
         run: |
           git diff --name-only origin/master | tee /tmp/changes.filelist.txt
